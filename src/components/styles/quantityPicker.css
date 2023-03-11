@@ -1,0 +1,16 @@
+.qt-picker label{
+    display: inline-block;
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.qt-picker button{
+    padding: 10px 10px;
+    background-color: aquamarine;
+    border: 1px solid gray;
+}
+
+.qt-picker button:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
