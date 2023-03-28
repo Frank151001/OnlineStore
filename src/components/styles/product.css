@@ -7,10 +7,12 @@
     border-radius: 4px;
     background-color: aliceblue;
     padding: 10px;
+    box-shadow: 1px 1px 6px -2px rgb(129, 101, 90);
 }
 
 .product:hover{
     border-color: rgb(180, 60, 20);
+    box-shadow: 1px 0 3px gray;
 }
 .product .prices{
     display: flex;
@@ -22,6 +24,12 @@
     width: 200px;
     height: 180px;
 }
+.product h5{
+    color:gray;
+    font-weight: 600;
+    font-size: 20px;
+}
+
 
 @media (max-width: 400px) {
     .product{

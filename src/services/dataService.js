@@ -1,7 +1,7 @@
 
 var catalog = [
     {
-        "title":"milk",
+        "title":"Belt",
         "category":"personal",
         "price":8.99,
         "image":"belt.jpg",

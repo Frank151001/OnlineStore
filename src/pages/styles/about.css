@@ -1,0 +1,9 @@
+.About {
+    min-height:95vh;
+    background-color: azure;
+}
+
+.About h1{
+    text-align: center;
+    color: black;
+}

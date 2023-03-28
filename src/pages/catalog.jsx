@@ -42,8 +42,8 @@ useEffect(function(){
             <h1>Hello check our stuff</h1>
             <h5>We have {products.length} new products for you</h5>
             <br></br>
-            <button onClick={clearFilter} className="btn btn-success btn-filter">All</button>
-            {category.map((c) => <button key = {c} onClick={()=>filter(c)}className="btn btn-success btn-filter">{c}</button>)}
+            <button onClick={clearFilter} className="btn btn-success btn-dark">All</button>
+            {category.map((c) => <button key = {c} onClick={()=>filter(c)}className="btn btn-success btn-dark ">{c}</button>)}
             <br></br>
 
             {prodsToDisplay.map((p) => (
