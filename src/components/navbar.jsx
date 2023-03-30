@@ -1,11 +1,17 @@
 import "./styles/navbar.css";
 import {Link} from 'react-router-dom';
+import { useContext } from "react";
+import globalContext from "../state/globalContext";
 import 'font-awesome/css/font-awesome.min.css';
 
 function Navbar(){
-  
-  
+  const numberOfProducts=useContext(globalContext).getNumberOfProducts;
 
+  useContext(globalContext);
+  function getCurrentPage(){
+    return"catalog";
+  }
+  
   
   return(
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -40,11 +46,12 @@ function Navbar(){
             </li>
           </ul>
           <form class="d-flex" role="search">
-          <li class="nav-item">
-              <Link class="nav-link" to="/cart">
+          
+              <Link className="btn btn-outline-success position-relative" to="/cart">
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ">{numberOfProducts()}</span>
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              Cart
               </Link>
-            </li>
           </form>
         </div>
       </div>

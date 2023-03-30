@@ -1,0 +1,9 @@
+.Cart .parent{
+    display: flex;
+}
+.Cart .parent{
+    flex:4;
+}
+.Cart .total{
+    flex:1;
+}

@@ -10,17 +10,28 @@ function GlobalProvider(props){
         let copy=[...cart];
         copy.push(prod);
         setCart(copy);
-        console.log("cheeking");
     }
     function removeToCart(){
         console.log("Deleting...");
     }
+
+    function getNumberOfProducts(){
+        let total=0;
+        for(let i=0;i<cart.length;i++){
+          let prod = cart[i];
+          total =total+prod.quantity;
+        }
+        return total;
+    }
     
-    return <GlobalContext.Provider value={{
+    return (<GlobalContext.Provider 
+        value={{
         cart:cart,
         user:user,
         addToCart:addToCart,
-        removeToCart:removeToCart
-    }}>{props.children}</GlobalContext.Provider>;
+        removeToCart:removeToCart,
+        getNumberOfProducts:getNumberOfProducts,
+    }}>{props.children}</GlobalContext.Provider>
+    );
 }
 export default GlobalProvider;
