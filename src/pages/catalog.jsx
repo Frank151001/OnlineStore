@@ -8,16 +8,16 @@ function Catalog(){
     const[category,setCategory]=useState([]);
     const[prodsToDisplay, setProdsToDisplay] = useState([]);
 
-useEffect(function(){
-    loadCatalog();
-},[]);
+    useEffect(function(){
+        loadCatalog();
+    },[]);
 
-    function loadCatalog(){
-        let service= new DataService();
-        let prods= service.getProduct();
+    async function loadCatalog(){
+        let service = new DataService();
+        let prods = await service.getProducts();
         console.log(prods);
         setProducts(prods);
-        let categories=["beverages","beuty","personal"];
+        let categories=["Home Decor","Kitchen Appliances","Outdoor Gear","Beauty Products","Electronics","Beverages"];
         setCategory(categories);
         setProdsToDisplay(prods);
     }

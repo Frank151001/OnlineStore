@@ -1,0 +1,36 @@
+.Cart{
+    min-height:80vh;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-abstracto-de-pintura-al-%C3%B3leo-blanco-para-la-plantilla-dise%C3%B1o-partir-del-gr%C3%A1fico-vons-se-puede-usar-presentaci%C3%B3n-238879263.jpg");
+}
+.products{
+    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.total{
+    margin-right: 50px;
+}
+.prod-cart{
+    border: 1px solid black;
+    padding: 5px;
+    border: 10px 30px;
+   
+    background-color: white;
+    border-radius: 4px;
+    margin: 10px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.prod-cart img {
+    width: 120px;
+    margin: 5px;
+    display: flex;
+}
+.prod-cart label{
+    display: block;
+}
+
+

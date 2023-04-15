@@ -1,4 +1,65 @@
 .admin{
-    background-color: beige;
-    min-height: 20px;
+    background-image: url("https://thumbs.dreamstime.com/b/fondo-abstracto-de-pintura-al-%C3%B3leo-blanco-para-la-plantilla-dise%C3%B1o-partir-del-gr%C3%A1fico-vons-se-puede-usar-presentaci%C3%B3n-238879263.jpg");
+    min-height:80vh;
+}
+.admin #products{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+.admin .buttoms{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.box{
+    background-color:#daded6;
+    color: black;
+    border-left:8px solid black;
+    border-right:8px solid black;
+    border-top:8px solid black;
+    border-bottom:8px solid black;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5px;
+    
+    
+}
+.box h1{
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 5PX 5PX 10PX black;
+}
+.box h2{
+    font-size: 24px;
+   text-align: left;
+
+    
+    margin-left: 10px;
+}
+.box p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 10px;
+    text-align: left;
+}
+.box h3{
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+.headers{
+   
+    background-image: linear-gradient(to top, #ffce00 50%, transparent 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.1s ease-in;
+}
+.headers:hover{
+    background-position:bottom;
+    color: white;
 }
